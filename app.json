@@ -1,12 +1,35 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/test/test",
+    "pages/index/index",  
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "微信",
     "navigationBarTextStyle":"black"
-  }
+  },
+    "tabBar": {
+      "color":"red",
+      "selectedColor":"#000",
+      "backgroundColor":"#ccc",
+      "list":[
+        {
+          "pagePath":"pages/logs/logs",
+          "text":"首页"
+        },{
+          "pagePath": "pages/test/test",
+          "text":"测试"
+        },
+        {
+          "pagePath": "pages/index/index",
+          "text": "日子"
+        }
+      ]
+    },
+    "networkTimeout":{
+      "request":"10000"
+    },
+    "debug":true
 }

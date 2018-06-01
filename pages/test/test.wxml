@@ -1,0 +1,4 @@
+<view>
+  <div>123你好</div>
+  <div>密码是：{{pass}}</div>
+</view>

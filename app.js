@@ -1,11 +1,11 @@
 //app.js
 App({
+  //生命周期函数--监听小程序初始化
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
     // 登录
     wx.login({
       success: res => {
@@ -33,7 +33,15 @@ App({
       }
     })
   },
+  onShow: function(){
+    console.log("生命周期函数--监听小程序显示")
+  },
+  onHide:function(){
+    console.log("生命周期函数--监听小程序隐藏")
+  },
+  //全局属性
   globalData: {
-    userInfo: null
+    userInfo: null,
+    pass:"123456"
   }
 })
